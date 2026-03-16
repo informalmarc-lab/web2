@@ -1,0 +1,238 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-12);
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+  animation: fadeUp 720ms ease both;
+}
+
+.hero {
+  display: grid;
+  gap: var(--space-8);
+  align-items: center;
+}
+
+.heroContent {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+
+.heroTitle {
+  font-size: var(--text-hero);
+  margin: 0;
+  line-height: 1.05;
+}
+
+.heroSubhead {
+  font-size: var(--text-xl);
+  color: var(--color-ink);
+  margin: 0;
+  line-height: 1.4;
+}
+
+.heroSupport {
+  font-size: var(--text-md);
+  color: var(--color-muted);
+  margin: 0;
+  line-height: 1.7;
+}
+
+.heroActions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-4);
+}
+
+.trustBadge {
+  background: rgba(192, 71, 74, 0.12);
+  color: var(--color-accent);
+  font-weight: 700;
+  padding: 10px 16px;
+  border-radius: 999px;
+  font-size: var(--text-sm);
+}
+
+.heroMedia {
+  position: relative;
+  border-radius: var(--radius-3);
+  overflow: hidden;
+  box-shadow: var(--shadow-1);
+}
+
+.heroImage {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.heroGlow {
+  position: absolute;
+  inset: auto -40% -40% auto;
+  width: 220px;
+  height: 220px;
+  background: rgba(192, 71, 74, 0.18);
+  filter: blur(20px);
+}
+
+.sectionTitle {
+  margin: 0 0 var(--space-2);
+  font-size: var(--text-3xl);
+}
+
+.sectionLead {
+  margin: 0;
+  color: var(--color-muted);
+  font-size: var(--text-lg);
+}
+
+.steps {
+  display: grid;
+  gap: var(--space-5);
+}
+
+.stepCard {
+  background: var(--color-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-2);
+  padding: var(--space-6);
+  box-shadow: var(--shadow-1);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.stepCard h3 {
+  margin: 0;
+  font-size: var(--text-xl);
+}
+
+.stepCard p {
+  margin: 0;
+  color: var(--color-muted);
+  line-height: 1.6;
+}
+
+.stepNumber {
+  font-weight: 700;
+  color: var(--color-accent);
+  font-size: var(--text-sm);
+  letter-spacing: 0.3em;
+}
+
+.cardGrid {
+  display: grid;
+  gap: var(--space-5);
+}
+
+.stats {
+  display: grid;
+  gap: var(--space-5);
+}
+
+.statBlock {
+  background: var(--color-cream);
+  border-radius: var(--radius-2);
+  padding: var(--space-6);
+  border: 1px solid var(--color-border);
+  text-align: left;
+}
+
+.statBlock h3 {
+  margin: 0 0 var(--space-2);
+  font-size: var(--text-2xl);
+  color: var(--color-accent);
+}
+
+.statBlock p {
+  margin: 0;
+  color: var(--color-muted);
+  line-height: 1.6;
+}
+
+.testimonials {
+  display: grid;
+  gap: var(--space-4);
+}
+
+.testimonials blockquote {
+  margin: 0;
+  padding: var(--space-6);
+  background: var(--color-card);
+  border-left: 4px solid var(--color-accent);
+  border-radius: var(--radius-2);
+  color: var(--color-muted);
+  line-height: 1.7;
+  box-shadow: var(--shadow-1);
+}
+
+.ctaStrip {
+  background: linear-gradient(135deg, #f7e5dc, #fff6f1);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-3);
+  padding: var(--space-8);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  align-items: flex-start;
+  box-shadow: var(--shadow-1);
+}
+
+.ctaStrip h2 {
+  margin: 0;
+  font-size: var(--text-2xl);
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (min-width: 768px) {
+  .hero {
+    grid-template-columns: 1.1fr 0.9fr;
+  }
+
+  .steps {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .cardGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .stats {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .testimonials {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .ctaStrip {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 1024px) {
+  .cardGrid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}

@@ -1,0 +1,89 @@
+:root {
+  --color-ivory: #fbf7f2;
+  --color-cream: #f3e8de;
+  --color-blush: #f8ecea;
+  --color-ink: #2e2421;
+  --color-muted: #6e5a55;
+  --color-accent: #c0474a;
+  --color-accent-dark: #9e3a3c;
+  --color-border: #e7d8cf;
+  --color-card: #fffaf6;
+  --color-shadow: rgba(46, 36, 33, 0.08);
+
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-7: 32px;
+  --space-8: 40px;
+  --space-9: 48px;
+  --space-10: 64px;
+  --space-11: 80px;
+  --space-12: 104px;
+
+  --radius-1: 10px;
+  --radius-2: 16px;
+  --radius-3: 24px;
+
+  --shadow-1: 0 16px 40px var(--color-shadow);
+  --shadow-2: 0 8px 24px rgba(46, 36, 33, 0.12);
+
+  --max-width: 1120px;
+  --max-width-narrow: 860px;
+
+  --text-xs: 12px;
+  --text-sm: 14px;
+  --text-md: 16px;
+  --text-lg: 18px;
+  --text-xl: 22px;
+  --text-2xl: 28px;
+  --text-3xl: 36px;
+  --text-4xl: 44px;
+  --text-5xl: 56px;
+  --text-hero: clamp(2.2rem, 5vw, 3.6rem);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100%;
+  font-family: var(--font-sans, "DM Sans", sans-serif);
+  color: var(--color-ink);
+  background:
+    radial-gradient(1200px 600px at 80% -10%, #fff3ef 0%, transparent 60%),
+    radial-gradient(900px 500px at -10% 10%, #f2e3d9 0%, transparent 55%),
+    linear-gradient(180deg, var(--color-ivory) 0%, #f7ede5 55%, #fdf8f4 100%);
+}
+
+main {
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button {
+  font-family: inherit;
+}
+
+::selection {
+  background: rgba(192, 71, 74, 0.2);
+}

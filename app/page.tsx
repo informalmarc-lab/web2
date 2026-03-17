@@ -13,17 +13,17 @@ export default function HomePage() {
             Most agencies take 30%. We take zero.
           </h1>
           <p className={styles.heroSubhead}>
-            Free promotion. Full setup. Your money goes straight to you ‚Äî every
-            time, no exceptions.
+            Free promotion. Full setup. Start within 2 hours ó your money goes
+            straight to you every time.
           </p>
           <p className={styles.heroSupport}>
             No experience needed. No contracts that trap you. Just real support
-            from people who actually get it ‚Äî so you can look at this and feel,
-            ‚ÄúI can do this.‚Äù
+            from people who get it ó so you can look at this and feel,
+            ìI can do this.î
           </p>
           <div className={styles.heroActions}>
-            <Button href="/apply">Apply Now ‚Üí</Button>
-            <div className={styles.trustBadge}>‚úì No Agency Fee ‚Äî Ever</div>
+            <Button href="/apply">Apply Now ?</Button>
+            <div className={styles.trustBadge}>? No Agency Fee ó Ever</div>
           </div>
         </div>
         <div className={styles.heroMedia}>
@@ -33,6 +33,7 @@ export default function HomePage() {
             width={1200}
             height={900}
             className={styles.heroImage}
+            priority
           />
           <div className={styles.heroGlow} aria-hidden="true" />
         </div>
@@ -42,7 +43,7 @@ export default function HomePage() {
       <section className={styles.section}>
         <div>
           <h2 className={styles.sectionTitle}>How it works</h2>
-          <p className={styles.sectionLead}>Three steps. That&apos;s it.</p>
+          <p className={styles.sectionLead}>Three steps. Thatís it.</p>
         </div>
         <div className={styles.steps}>
           <div className={styles.stepCard}>
@@ -58,7 +59,7 @@ export default function HomePage() {
             <h3>Get Set Up</h3>
             <p>
               We handle your stream setup, branding, and everything you need to
-              go live with confidence.
+              go live with confidence ó often within 2 hours.
             </p>
           </div>
           <div className={styles.stepCard}>
@@ -77,16 +78,16 @@ export default function HomePage() {
         <div>
           <h2 className={styles.sectionTitle}>Built for women who want freedom</h2>
           <p className={styles.sectionLead}>
-            Omega is for women 18+ who want flexible income on their own terms ‚Äî
+            Omega is for women 18+ who want flexible income on their own terms ó
             especially college women, bilingual creators, and Latina creators.
             We welcome applications in any language, with support available in
             English and Spanish.
           </p>
         </div>
         <div className={styles.callout}>
-          <h3>You don&apos;t need experience to start</h3>
+          <h3>You donít need experience to start</h3>
           <p>
-            If you&apos;re in college and want a real income stream without a rigid
+            If youíre in college and want a real income stream without a rigid
             schedule, we make the first steps simple and supportive.
           </p>
         </div>
@@ -120,7 +121,7 @@ export default function HomePage() {
         <div>
           <h2 className={styles.sectionTitle}>What you get</h2>
           <p className={styles.sectionLead}>
-            Everything you need to build a real income ‚Äî without giving any of
+            Everything you need to build a real income ó without giving any of
             it away.
           </p>
         </div>
@@ -130,20 +131,20 @@ export default function HomePage() {
             your stream. You keep streaming. We handle the rest.
           </Card>
           <Card title="Featured Profile on Omega Agency">
-            Your name, your image, your bio ‚Äî showcased to everyone who visits
+            Your name, your image, your bio ó showcased to everyone who visits
             omegagency.cam.
           </Card>
           <Card title="Off-Site Promotion">
-            We actively promote you beyond the site ‚Äî helping drive new viewers
+            We actively promote you beyond the site ó helping drive new viewers
             directly to your streams.
           </Card>
           <Card title="Full Coaching & Setup Support">
-            Never streamed before? No problem. We&apos;ll walk you through
+            Never streamed before? No problem. Weíll walk you through
             equipment, lighting, platform setup, and what actually works.
           </Card>
           <Card title="Your Money, Your Account, Always">
-            Your earnings hit your account directly. We never touch your money
-            ‚Äî not a single dollar passes through us.
+            Your earnings hit your account directly. We never touch your money ó
+            not a single dollar passes through us.
           </Card>
         </div>
       </section>
@@ -162,7 +163,7 @@ export default function HomePage() {
           </div>
           <div className={styles.statBlock}>
             <h3>$0</h3>
-            <p>taken from a single creator&apos;s income. Ever.</p>
+            <p>taken from a single creatorís income. Ever.</p>
           </div>
         </div>
       </section>
@@ -172,18 +173,18 @@ export default function HomePage() {
         <h2 className={styles.sectionTitle}>Testimonials</h2>
         <div className={styles.testimonials}>
           <blockquote>
-            &quot;I was nervous about joining an agency. Omega was the first one
-            that didn&apos;t ask for anything from me. Within two weeks I had
-            more viewers than I&apos;d ever had on my own.&quot; ‚Äî Anonymous, StripChat
+            ìI was nervous about joining an agency. Omega was the first one
+            that didnít ask for anything from me. Within two weeks I had
+            more viewers than Iíd ever had on my own.î ó Anonymous, StripChat
           </blockquote>
           <blockquote>
-            &quot;They set everything up for me from scratch. I didn&apos;t know
-            anything about streaming and now I&apos;m making more than I did at
-            my 9-to-5.&quot; ‚Äî Anonymous, Chaturbate
+            ìThey set everything up for me from scratch. I didnít know
+            anything about streaming and now Iím making more than I did at
+            my 9-to-5.î ó Anonymous, Chaturbate
           </blockquote>
           <blockquote>
-            &quot;What sold me was knowing my account is mine and my money is mine.
-            Omega doesn&apos;t change that. They just help you grow.&quot; ‚Äî Anonymous,
+            ìWhat sold me was knowing my account is mine and my money is mine.
+            Omega doesnít change that. They just help you grow.î ó Anonymous,
             StripChat
           </blockquote>
         </div>
@@ -192,7 +193,7 @@ export default function HomePage() {
       {/* Bottom CTA */}
       <section className={styles.ctaStrip}>
         <h2>Ready to start? It costs you nothing.</h2>
-        <Button href="/apply">Apply Now ‚Üí</Button>
+        <Button href="/apply">Apply Now ?</Button>
       </section>
     </div>
   );

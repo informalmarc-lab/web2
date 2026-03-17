@@ -1,6 +1,6 @@
 .main {
   min-height: 70vh;
-  padding: var(--space-8) var(--space-6) var(--space-12);
+  padding: var(--space-8) var(--space-5) var(--space-12);
 }
 
 @media (min-width: 768px) {

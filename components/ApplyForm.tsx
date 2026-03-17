@@ -35,7 +35,7 @@ export default function ApplyForm() {
       }
 
       setStatus("success");
-      setMessage("Thank you for applying. We'll be in touch within 48 hours.");
+      setMessage("Thank you for applying. We’ll be in touch within 48 hours.");
       event.currentTarget.reset();
     } catch (error) {
       setStatus("error");
@@ -51,38 +51,18 @@ export default function ApplyForm() {
     <form className={styles.form} onSubmit={handleSubmit}>
       <div className={styles.field}>
         <label htmlFor="fullName">Full name or alias</label>
-        <input
-          id="fullName"
-          name="fullName"
-          type="text"
-          required
-        />
+        <input id="fullName" name="fullName" type="text" required />
       </div>
       <div className={styles.field}>
         <label htmlFor="email">Email address</label>
-        <input
-          id="email"
-          name="email"
-          type="email"
-          required
-        />
+        <input id="email" name="email" type="email" required />
       </div>
       <div className={styles.field}>
         <label htmlFor="country">Country</label>
-        <input
-          id="country"
-          name="country"
-          type="text"
-          required
-        />
+        <input id="country" name="country" type="text" required />
       </div>
       <div className={styles.checkboxRow}>
-        <input
-          id="ageConfirm"
-          name="ageConfirm"
-          type="checkbox"
-          required
-        />
+        <input id="ageConfirm" name="ageConfirm" type="checkbox" required />
         <label htmlFor="ageConfirm">
           I confirm I am 18 years of age or older
         </label>
@@ -107,14 +87,9 @@ export default function ApplyForm() {
       </div>
       <div className={styles.field}>
         <label htmlFor="about">
-          Tell us a little about yourself and what you&apos;re looking for
+          Tell us a little about yourself and what you’re looking for
         </label>
-        <textarea
-          id="about"
-          name="about"
-          rows={5}
-          required
-        />
+        <textarea id="about" name="about" rows={5} required />
       </div>
       <Button type="submit" fullWidth disabled={isLoading}>
         Submit Application

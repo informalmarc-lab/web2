@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <footer className={styles.footer}>
       <div className={styles.inner}>
-        <p>Â© 2026 Omega Agency â€” omegagency.cam</p>
+        <p>© 2026 Omega Agency — omegagency.cam</p>
       </div>
     </footer>
   );

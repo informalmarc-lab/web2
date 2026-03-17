@@ -10,7 +10,7 @@ export default function ApplyPage() {
         <h1>Take the first step.</h1>
         <p className={styles.subhead}>
           Fill out the form below. We review every application personally and
-          respond within 48 hours. If you&apos;re a college woman (18+) or just
+          respond within 48 hours. If you’re a college woman (18+) or just
           starting out, this was built to feel doable.
         </p>
       </section>
@@ -36,13 +36,13 @@ export default function ApplyPage() {
             />
           </div>
           <p>We review every application personally. No bots, no auto-rejections.</p>
-          <p>You&apos;ll hear back via email within 48 hours.</p>
+          <p>You’ll hear back via email within 48 hours.</p>
           <p>Not sure if this is right for you? Read our FAQ before applying.</p>
           <p>We welcome applications in any language, with support in English and Spanish.</p>
           <div className={styles.trustList}>
-            <p>âœ“ We will never share your information.</p>
-            <p>âœ“ Applying does not commit you to anything.</p>
-            <p>âœ“ You can withdraw your application at any time.</p>
+            <p>? We will never share your information.</p>
+            <p>? Applying does not commit you to anything.</p>
+            <p>? You can withdraw your application at any time.</p>
           </div>
         </div>
       </section>

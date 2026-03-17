@@ -18,11 +18,11 @@ export default function CatalogPage() {
       <section className={styles.hero}>
         <div>
           <p className={styles.notice}>
-            This site is getting updated â€” but here&apos;s our first.
+            This site is getting updated — but here’s our first.
           </p>
           <h1>Elena Moire</h1>
           <p className={styles.subhead}>
-            Start within 2 hours. We&apos;ll guide you from setup to go-live with
+            Start within 2 hours. We’ll guide you from setup to go-live with
             real support.
           </p>
           <div className={styles.stats}>
@@ -51,7 +51,7 @@ export default function CatalogPage() {
               <strong>8</strong>
             </div>
           </div>
-          <Button href="/apply">Apply Now â†’</Button>
+          <Button href="/apply">Apply Now ?</Button>
         </div>
         <div className={styles.featureImage}>
           <Image

@@ -7,12 +7,12 @@ const faqItems = [
   {
     question: "Do you take a percentage of my earnings?",
     answer:
-      "No. Not now, not ever. You keep 100% of everything you earn on StripChat and Chaturbate. Omega's operations are supported by small advertisements placed on streams â€” your income is never touched.",
+      "No. Not now, not ever. You keep 100% of everything you earn on StripChat and Chaturbate. Omega’s operations are supported by small advertisements placed on streams — your income is never touched.",
   },
   {
     question: "How do I get paid?",
     answer:
-      "Directly from the platform to you. StripChat and Chaturbate pay you directly into your account. Omega is never involved in your payments â€” we don't hold your money, delay it, or take anything from it.",
+      "Directly from the platform to you. StripChat and Chaturbate pay you directly into your account. Omega is never involved in your payments — we don’t hold your money, delay it, or take anything from it.",
   },
   {
     question: "Who owns my accounts?",
@@ -22,17 +22,17 @@ const faqItems = [
   {
     question: "Do I need experience?",
     answer:
-      "Not at all. Many of the creators who join Omega have never streamed before. We walk you through setup, equipment, lighting, and what works on each platform â€” from scratch if needed.",
+      "Not at all. Many of the creators who join Omega have never streamed before. We walk you through setup, equipment, lighting, and what works on each platform — from scratch if needed.",
   },
   {
     question: "What does the on-stream ad look like?",
     answer:
-      "It's a small, non-intrusive overlay in the bottom-left corner of your stream. It doesn't interrupt your content or distract your viewers.",
+      "It’s a small, non-intrusive overlay in the bottom-left corner of your stream. It doesn’t interrupt your content or distract your viewers.",
   },
   {
     question: "Do I have to be exclusive to Omega?",
     answer:
-      "We prefer it, but it's not required. You're free to work with other agencies if you choose. We just ask that you're upfront with us.",
+      "We prefer it, but it’s not required. You’re free to work with other agencies if you choose. We just ask that you’re upfront with us.",
   },
   {
     question: "What platforms do you work with?",
@@ -52,7 +52,7 @@ const faqItems = [
   {
     question: "How long does approval take?",
     answer:
-      "We review every application personally. You'll hear back within 48 hours.",
+      "We review every application personally. You’ll hear back within 48 hours.",
   },
   {
     question: "What if I want to leave?",
@@ -96,7 +96,7 @@ export default function FAQPage() {
           Still have questions? Reach out through the Apply page and ask us
           directly.
         </h2>
-        <Button href="/apply">Apply Now â†’</Button>
+        <Button href="/apply">Apply Now ?</Button>
       </section>
     </div>
   );

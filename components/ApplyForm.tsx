@@ -35,7 +35,7 @@ export default function ApplyForm() {
       }
 
       setStatus("success");
-      setMessage("Thank you for applying. We’ll be in touch within 48 hours.");
+      setMessage("Thank you for applying. We'll be in touch within 48 hours.");
       event.currentTarget.reset();
     } catch (error) {
       setStatus("error");
@@ -87,7 +87,7 @@ export default function ApplyForm() {
       </div>
       <div className={styles.field}>
         <label htmlFor="about">
-          Tell us a little about yourself and what you’re looking for
+          Tell us a little about yourself and what you're looking for
         </label>
         <textarea id="about" name="about" rows={5} required />
       </div>

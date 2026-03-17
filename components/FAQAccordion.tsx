@@ -34,7 +34,7 @@ export default function FAQAccordion({ items }: FAQAccordionProps) {
               type="button"
             >
               <span>{item.question}</span>
-              <span className={styles.icon}>{isOpen ? "–" : "+"}</span>
+              <span className={styles.icon}>{isOpen ? "-" : "+"}</span>
             </button>
             <div
               className={`${styles.panel} ${isOpen ? styles.open : ""}`}

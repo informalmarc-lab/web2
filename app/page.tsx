@@ -13,17 +13,17 @@ export default function HomePage() {
             Most agencies take 30%. We take zero.
           </h1>
           <p className={styles.heroSubhead}>
-            Free promotion. Full setup. Start within 2 hours — your money goes
+            Free promotion. Full setup. Start within 2 hours -- your money goes
             straight to you every time.
           </p>
           <p className={styles.heroSupport}>
             No experience needed. No contracts that trap you. Just real support
-            from people who get it — so you can look at this and feel,
-            “I can do this.”
+            from people who get it -- so you can look at this and feel,
+            "I can do this."
           </p>
           <div className={styles.heroActions}>
             <Button href="/apply">Apply Now ?</Button>
-            <div className={styles.trustBadge}>? No Agency Fee — Ever</div>
+            <div className={styles.trustBadge}>? No Agency Fee -- Ever</div>
           </div>
         </div>
         <div className={styles.heroMedia}>
@@ -43,7 +43,7 @@ export default function HomePage() {
       <section className={styles.section}>
         <div>
           <h2 className={styles.sectionTitle}>How it works</h2>
-          <p className={styles.sectionLead}>Three steps. That’s it.</p>
+          <p className={styles.sectionLead}>Three steps. That's it.</p>
         </div>
         <div className={styles.steps}>
           <div className={styles.stepCard}>
@@ -59,7 +59,7 @@ export default function HomePage() {
             <h3>Get Set Up</h3>
             <p>
               We handle your stream setup, branding, and everything you need to
-              go live with confidence — often within 2 hours.
+              go live with confidence -- often within 2 hours.
             </p>
           </div>
           <div className={styles.stepCard}>
@@ -78,16 +78,16 @@ export default function HomePage() {
         <div>
           <h2 className={styles.sectionTitle}>Built for women who want freedom</h2>
           <p className={styles.sectionLead}>
-            Omega is for women 18+ who want flexible income on their own terms —
+            Omega is for women 18+ who want flexible income on their own terms --
             especially college women, bilingual creators, and Latina creators.
             We welcome applications in any language, with support available in
             English and Spanish.
           </p>
         </div>
         <div className={styles.callout}>
-          <h3>You don’t need experience to start</h3>
+          <h3>You don't need experience to start</h3>
           <p>
-            If you’re in college and want a real income stream without a rigid
+            If you're in college and want a real income stream without a rigid
             schedule, we make the first steps simple and supportive.
           </p>
         </div>
@@ -121,7 +121,7 @@ export default function HomePage() {
         <div>
           <h2 className={styles.sectionTitle}>What you get</h2>
           <p className={styles.sectionLead}>
-            Everything you need to build a real income — without giving any of
+            Everything you need to build a real income -- without giving any of
             it away.
           </p>
         </div>
@@ -131,19 +131,19 @@ export default function HomePage() {
             your stream. You keep streaming. We handle the rest.
           </Card>
           <Card title="Featured Profile on Omega Agency">
-            Your name, your image, your bio — showcased to everyone who visits
+            Your name, your image, your bio -- showcased to everyone who visits
             omegagency.cam.
           </Card>
           <Card title="Off-Site Promotion">
-            We actively promote you beyond the site — helping drive new viewers
+            We actively promote you beyond the site -- helping drive new viewers
             directly to your streams.
           </Card>
           <Card title="Full Coaching & Setup Support">
-            Never streamed before? No problem. We’ll walk you through
+            Never streamed before? No problem. We'll walk you through
             equipment, lighting, platform setup, and what actually works.
           </Card>
           <Card title="Your Money, Your Account, Always">
-            Your earnings hit your account directly. We never touch your money —
+            Your earnings hit your account directly. We never touch your money --
             not a single dollar passes through us.
           </Card>
         </div>
@@ -163,7 +163,7 @@ export default function HomePage() {
           </div>
           <div className={styles.statBlock}>
             <h3>$0</h3>
-            <p>taken from a single creator’s income. Ever.</p>
+            <p>taken from a single creator's income. Ever.</p>
           </div>
         </div>
       </section>
@@ -173,18 +173,18 @@ export default function HomePage() {
         <h2 className={styles.sectionTitle}>Testimonials</h2>
         <div className={styles.testimonials}>
           <blockquote>
-            “I was nervous about joining an agency. Omega was the first one
-            that didn’t ask for anything from me. Within two weeks I had
-            more viewers than I’d ever had on my own.” — Anonymous, StripChat
+            "I was nervous about joining an agency. Omega was the first one
+            that didn't ask for anything from me. Within two weeks I had
+            more viewers than I'd ever had on my own." -- Anonymous, StripChat
           </blockquote>
           <blockquote>
-            “They set everything up for me from scratch. I didn’t know
-            anything about streaming and now I’m making more than I did at
-            my 9-to-5.” — Anonymous, Chaturbate
+            "They set everything up for me from scratch. I didn't know
+            anything about streaming and now I'm making more than I did at
+            my 9-to-5." -- Anonymous, Chaturbate
           </blockquote>
           <blockquote>
-            “What sold me was knowing my account is mine and my money is mine.
-            Omega doesn’t change that. They just help you grow.” — Anonymous,
+            "What sold me was knowing my account is mine and my money is mine.
+            Omega doesn't change that. They just help you grow." -- Anonymous,
             StripChat
           </blockquote>
         </div>

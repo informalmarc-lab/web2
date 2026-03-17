@@ -18,7 +18,8 @@ export default function HomePage() {
           </p>
           <p className={styles.heroSupport}>
             No experience needed. No contracts that trap you. Just real support
-            from people who actually get it.
+            from people who actually get it — so you can look at this and feel,
+            “I can do this.”
           </p>
           <div className={styles.heroActions}>
             <Button href="/apply">Apply Now →</Button>
@@ -77,9 +78,16 @@ export default function HomePage() {
           <h2 className={styles.sectionTitle}>Built for women who want freedom</h2>
           <p className={styles.sectionLead}>
             Omega is for women 18+ who want flexible income on their own terms —
-            including college-age women, bilingual creators, and Latina creators.
+            especially college women, bilingual creators, and Latina creators.
             We welcome applications in any language, with support available in
             English and Spanish.
+          </p>
+        </div>
+        <div className={styles.callout}>
+          <h3>You don&apos;t need experience to start</h3>
+          <p>
+            If you&apos;re in college and want a real income stream without a rigid
+            schedule, we make the first steps simple and supportive.
           </p>
         </div>
         <div className={styles.imageGrid}>

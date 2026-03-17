@@ -131,8 +131,8 @@ export default function AboutPage() {
           <p>
             We&apos;re particularly focused on helping women in the US who are
             looking for flexible, independent income on their own terms —
-            including Latina creators, bilingual creators, and college-age
-            women — without sacrificing their accounts, their earnings, or
+            including Latina creators, bilingual creators, and college women
+            (18+) — without sacrificing their accounts, their earnings, or
             their freedom to walk away whenever they want.
           </p>
         </div>

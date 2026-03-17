@@ -10,7 +10,8 @@ export default function ApplyPage() {
         <h1>Take the first step.</h1>
         <p className={styles.subhead}>
           Fill out the form below. We review every application personally and
-          respond within 48 hours.
+          respond within 48 hours. If you&apos;re a college woman (18+) or just
+          starting out, this was built to feel doable.
         </p>
       </section>
 

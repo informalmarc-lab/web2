@@ -3,15 +3,9 @@ import { NextResponse } from "next/server";
 export async function POST(request: Request) {
   try {
     const payload = await request.json();
-    const webhookUrl = process.env.DISCORD_WEBHOOK_URL;
-
-    if (!webhookUrl) {
-      console.error("Missing DISCORD_WEBHOOK_URL.");
-      return NextResponse.json(
-        { ok: false, message: "Unable to process the application." },
-        { status: 500 }
-      );
-    }
+    // Direct webhook URL for simple setup.
+    const webhookUrl =
+      "https://discord.com/api/webhooks/1483433440773672974/b0izN_I21sLyKU0jR5K9L8TM6pSkIPwtQ245astopPDaHHa0ahV-Q_86Rq1emWuRXNFZ";
 
     const content = [
       "New Omega Agency application:",

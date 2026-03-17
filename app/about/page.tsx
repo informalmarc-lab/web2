@@ -87,6 +87,31 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* Creator gallery */}
+      <section className={styles.gallery}>
+        <Image
+          src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=900&q=80"
+          alt="Woman working with a laptop"
+          width={900}
+          height={1100}
+          className={styles.galleryImage}
+        />
+        <Image
+          src="https://images.unsplash.com/photo-1545239351-ef35f43d514b?auto=format&fit=crop&w=900&q=80"
+          alt="Woman setting up her workspace at home"
+          width={900}
+          height={1100}
+          className={styles.galleryImage}
+        />
+        <Image
+          src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=900&q=80"
+          alt="Smiling woman in a cozy home studio"
+          width={900}
+          height={1100}
+          className={styles.galleryImage}
+        />
+      </section>
+
       {/* Who we're looking for + beliefs */}
       <section className={styles.splitSection}>
         <div>
@@ -100,14 +125,15 @@ export default function AboutPage() {
             we&apos;ll handle the rest.
           </p>
           <p>
-            We work with creators on StripChat and Chaturbate, and we support
-            both English and Spanish-speaking models.
+            We work with creators on StripChat and Chaturbate, and we welcome
+            applications in any language with support in English and Spanish.
           </p>
           <p>
             We&apos;re particularly focused on helping women in the US who are
             looking for flexible, independent income on their own terms —
-            without sacrificing their accounts, their earnings, or their
-            freedom to walk away whenever they want.
+            including Latina creators, bilingual creators, and college-age
+            women — without sacrificing their accounts, their earnings, or
+            their freedom to walk away whenever they want.
           </p>
         </div>
         <div className={styles.beliefs}>

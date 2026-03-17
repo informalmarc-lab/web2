@@ -59,6 +59,19 @@
   font-size: var(--text-md);
 }
 
+.gallery {
+  display: grid;
+  gap: var(--space-5);
+}
+
+.galleryImage {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius-2);
+  object-fit: cover;
+  box-shadow: var(--shadow-1);
+}
+
 .lead {
   font-size: var(--text-lg);
   color: var(--color-ink);
@@ -102,6 +115,10 @@
 
   .splitSection {
     grid-template-columns: 1.1fr 0.9fr;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
 

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Button from "@/components/Button";
 import FAQAccordion from "@/components/FAQAccordion";
 import styles from "./page.module.css";
@@ -40,7 +41,8 @@ const faqItems = [
   },
   {
     question: "What languages do you support?",
-    answer: "We support English and Spanish-speaking creators.",
+    answer:
+      "We welcome creators in any language, with support available in English and Spanish.",
   },
   {
     question: "Is there a contract?",
@@ -65,6 +67,24 @@ export default function FAQPage() {
       {/* Header */}
       <section className={styles.hero}>
         <h1>Everything you want to know.</h1>
+      </section>
+
+      {/* Visuals */}
+      <section className={styles.gallery}>
+        <Image
+          src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=900&q=80"
+          alt="Woman smiling before a work session"
+          width={900}
+          height={1100}
+          className={styles.galleryImage}
+        />
+        <Image
+          src="https://images.unsplash.com/photo-1544723795-3fb6469f5b39?auto=format&fit=crop&w=900&q=80"
+          alt="Woman working from home at her laptop"
+          width={900}
+          height={1100}
+          className={styles.galleryImage}
+        />
       </section>
 
       {/* Accordion */}

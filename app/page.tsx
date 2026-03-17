@@ -71,6 +71,42 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Community */}
+      <section className={styles.section}>
+        <div>
+          <h2 className={styles.sectionTitle}>Built for women who want freedom</h2>
+          <p className={styles.sectionLead}>
+            Omega is for women 18+ who want flexible income on their own terms —
+            including college-age women, bilingual creators, and Latina creators.
+            We welcome applications in any language, with support available in
+            English and Spanish.
+          </p>
+        </div>
+        <div className={styles.imageGrid}>
+          <Image
+            src="https://images.unsplash.com/photo-1545239351-ef35f43d514b?auto=format&fit=crop&w=900&q=80"
+            alt="Woman working from home with a laptop"
+            width={900}
+            height={1100}
+            className={styles.imageTile}
+          />
+          <Image
+            src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=900&q=80"
+            alt="Confident woman smiling at her desk"
+            width={900}
+            height={1100}
+            className={styles.imageTile}
+          />
+          <Image
+            src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=900&q=80"
+            alt="Woman preparing for a work session at home"
+            width={900}
+            height={1100}
+            className={styles.imageTile}
+          />
+        </div>
+      </section>
+
       {/* What you get */}
       <section className={styles.section}>
         <div>

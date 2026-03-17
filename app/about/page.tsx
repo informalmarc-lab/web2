@@ -1,4 +1,3 @@
-import Image from "next/image";
 import styles from "./page.module.css";
 
 export default function AboutPage() {
@@ -20,7 +19,10 @@ export default function AboutPage() {
               promotion, and support. They talked about marketing teams, account
               management, and higher earnings.
             </p>
-            <p>But after working with several different agencies, she realized something.</p>
+            <p>
+              But after working with several different agencies, she realized
+              something.
+            </p>
             <p>
               Most of them were built around taking a percentage of the
               model's income while providing very little real help.
@@ -72,39 +74,27 @@ export default function AboutPage() {
             </p>
           </div>
         </div>
-        <div className={styles.heroImage}>
-          <Image
-            src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=1200&q=80"
-            alt="Confident woman working from a cozy home setup"
-            width={1200}
-            height={900}
-          />
+        <div className={styles.heroPanel}>
+          <h2>Why it works</h2>
+          <p>
+            Omega keeps creators in control. Your account stays yours, your
+            payouts go directly to you, and you can leave whenever you want.
+          </p>
+          <div className={styles.panelGrid}>
+            <div>
+              <span>Launched</span>
+              <strong>2022</strong>
+            </div>
+            <div>
+              <span>Creator earnings</span>
+              <strong>$4,000,000+</strong>
+            </div>
+            <div>
+              <span>Agency cut</span>
+              <strong>$0</strong>
+            </div>
+          </div>
         </div>
-      </section>
-
-      {/* Creator gallery */}
-      <section className={styles.gallery}>
-        <Image
-          src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=900&q=80"
-          alt="Woman working with a laptop"
-          width={900}
-          height={1100}
-          className={styles.galleryImage}
-        />
-        <Image
-          src="https://images.unsplash.com/photo-1545239351-ef35f43d514b?auto=format&fit=crop&w=900&q=80"
-          alt="Woman setting up her workspace at home"
-          width={900}
-          height={1100}
-          className={styles.galleryImage}
-        />
-        <Image
-          src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=900&q=80"
-          alt="Smiling woman in a cozy home studio"
-          width={900}
-          height={1100}
-          className={styles.galleryImage}
-        />
       </section>
 
       {/* Who we're looking for + beliefs */}
@@ -134,10 +124,10 @@ export default function AboutPage() {
         <div className={styles.beliefs}>
           <h2>What we believe</h2>
           <ul>
-            <li>? Your account is yours. We will never ask for your login or control your profile.</li>
-            <li>? Your money is yours. It goes from the platform directly to you. We never see it.</li>
-            <li>? Your time is yours. No mandatory schedules, no performance quotas.</li>
-            <li>? You can leave whenever you want. No lock-in, no penalties, no drama.</li>
+            <li>Your account is yours. We will never ask for your login.</li>
+            <li>Your money is yours. It goes directly to you.</li>
+            <li>Your time is yours. No mandatory schedules or quotas.</li>
+            <li>You can leave whenever you want. No lock-in or penalties.</li>
           </ul>
         </div>
       </section>

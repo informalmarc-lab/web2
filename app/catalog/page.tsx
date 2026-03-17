@@ -51,7 +51,7 @@ export default function CatalogPage() {
               <strong>8</strong>
             </div>
           </div>
-          <Button href="/apply">Apply Now ?</Button>
+          <Button href="/apply">Apply Now -></Button>
         </div>
         <div className={styles.featureImage}>
           <Image

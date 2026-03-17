@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Button from "@/components/Button";
 import Card from "@/components/Card";
 import styles from "./page.module.css";
@@ -22,20 +21,35 @@ export default function HomePage() {
             "I can do this."
           </p>
           <div className={styles.heroActions}>
-            <Button href="/apply">Apply Now ?</Button>
-            <div className={styles.trustBadge}>? No Agency Fee -- Ever</div>
+            <Button href="/apply">Apply Now -></Button>
+            <div className={styles.trustBadge}>No Agency Fee -- Ever</div>
           </div>
         </div>
-        <div className={styles.heroMedia}>
-          <Image
-            src="https://images.unsplash.com/photo-1544723795-3fb6469f5b39?auto=format&fit=crop&w=1200&q=80"
-            alt="Woman working confidently from home"
-            width={1200}
-            height={900}
-            className={styles.heroImage}
-            priority
-          />
-          <div className={styles.heroGlow} aria-hidden="true" />
+        <div className={styles.heroArt}>
+          <div className={styles.heroTag}>Zero fee agency</div>
+          <div className={styles.heroStat}>
+            <span>Start in</span>
+            <strong>2 hours</strong>
+          </div>
+          <p>
+            We set up your stream, branding, and promotion so you can go live
+            with confidence and keep 100% of your earnings.
+          </p>
+          <div className={styles.heroDivider} />
+          <div className={styles.heroMiniGrid}>
+            <div>
+              <span>Setup</span>
+              <strong>Done for you</strong>
+            </div>
+            <div>
+              <span>Promotion</span>
+              <strong>Always on</strong>
+            </div>
+            <div>
+              <span>Fees</span>
+              <strong>$0</strong>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -91,28 +105,19 @@ export default function HomePage() {
             schedule, we make the first steps simple and supportive.
           </p>
         </div>
-        <div className={styles.imageGrid}>
-          <Image
-            src="https://images.unsplash.com/photo-1545239351-ef35f43d514b?auto=format&fit=crop&w=900&q=80"
-            alt="Woman working from home with a laptop"
-            width={900}
-            height={1100}
-            className={styles.imageTile}
-          />
-          <Image
-            src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=900&q=80"
-            alt="Confident woman smiling at her desk"
-            width={900}
-            height={1100}
-            className={styles.imageTile}
-          />
-          <Image
-            src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=900&q=80"
-            alt="Woman preparing for a work session at home"
-            width={900}
-            height={1100}
-            className={styles.imageTile}
-          />
+        <div className={styles.communityGrid}>
+          <div>
+            <h4>Flexible schedules</h4>
+            <p>Stream when you want, pause when you need to.</p>
+          </div>
+          <div>
+            <h4>Privacy first</h4>
+            <p>We show you how to stay anonymous and stay safe.</p>
+          </div>
+          <div>
+            <h4>Support in two languages</h4>
+            <p>Guidance available in English and Spanish.</p>
+          </div>
         </div>
       </section>
 
@@ -138,7 +143,7 @@ export default function HomePage() {
             We actively promote you beyond the site -- helping drive new viewers
             directly to your streams.
           </Card>
-          <Card title="Full Coaching & Setup Support">
+          <Card title="Full Coaching and Setup Support">
             Never streamed before? No problem. We'll walk you through
             equipment, lighting, platform setup, and what actually works.
           </Card>
@@ -193,7 +198,7 @@ export default function HomePage() {
       {/* Bottom CTA */}
       <section className={styles.ctaStrip}>
         <h2>Ready to start? It costs you nothing.</h2>
-        <Button href="/apply">Apply Now ?</Button>
+        <Button href="/apply">Apply Now -></Button>
       </section>
     </div>
   );

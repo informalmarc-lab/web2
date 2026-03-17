@@ -14,10 +14,11 @@ export default function ApplyForm() {
 
   const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
+    const form = event.currentTarget;
     setStatus("loading");
     setMessage("");
 
-    const formData = new FormData(event.currentTarget);
+    const formData = new FormData(form);
     const payload = Object.fromEntries(formData.entries());
 
     try {
@@ -35,8 +36,8 @@ export default function ApplyForm() {
       }
 
       setStatus("success");
-      setMessage("Thank you for applying. We'll be in touch within 48 hours.");
-      event.currentTarget.reset();
+      setMessage("Thank you for applying. We will be in touch within 48 hours.");
+      form.reset();
     } catch (error) {
       setStatus("error");
       setMessage(
@@ -87,7 +88,7 @@ export default function ApplyForm() {
       </div>
       <div className={styles.field}>
         <label htmlFor="about">
-          Tell us a little about yourself and what you're looking for
+          Tell us a little about yourself and what you are looking for
         </label>
         <textarea id="about" name="about" rows={5} required />
       </div>

@@ -1,0 +1,105 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-10);
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.hero {
+  display: grid;
+  gap: var(--space-7);
+  align-items: start;
+  animation: fadeUp 720ms ease both;
+}
+
+.eyebrow {
+  margin: 0 0 var(--space-3);
+  font-size: var(--text-sm);
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--color-accent);
+  font-weight: 700;
+}
+
+.lead {
+  margin: 0;
+  font-size: var(--text-lg);
+  color: var(--color-muted);
+  line-height: 1.6;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-3);
+  padding: var(--space-7);
+  box-shadow: var(--shadow-1);
+}
+
+.card h2 {
+  margin-top: 0;
+  margin-bottom: var(--space-4);
+}
+
+.list {
+  margin: 0;
+  padding-left: 18px;
+  color: var(--color-muted);
+  line-height: 1.7;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.story {
+  animation: fadeUp 720ms ease both;
+  animation-delay: 120ms;
+}
+
+.storyCard {
+  background: linear-gradient(135deg, #fff6f0, #ffffff);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-3);
+  padding: var(--space-8);
+  box-shadow: var(--shadow-1);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.storyLabel {
+  margin: 0;
+  font-size: var(--text-sm);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  font-weight: 700;
+}
+
+.storyCard h2 {
+  margin: 0;
+}
+
+.storyCard p {
+  margin: 0;
+  color: var(--color-muted);
+  line-height: 1.7;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (min-width: 900px) {
+  .hero {
+    grid-template-columns: 1.1fr 0.9fr;
+  }
+}

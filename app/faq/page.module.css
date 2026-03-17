@@ -35,6 +35,12 @@
   font-size: var(--text-4xl);
 }
 
+.lead {
+  margin: 0;
+  color: var(--color-muted);
+  font-size: var(--text-lg);
+}
+
 .footerCta {
   background: linear-gradient(140deg, #fff0e8, #fffaf6);
   border: 1px solid var(--color-border);
@@ -44,19 +50,6 @@
   flex-direction: column;
   gap: var(--space-4);
   align-items: flex-start;
-  box-shadow: var(--shadow-1);
-}
-
-.gallery {
-  display: grid;
-  gap: var(--space-4);
-}
-
-.galleryImage {
-  width: 100%;
-  height: auto;
-  border-radius: var(--radius-2);
-  object-fit: cover;
   box-shadow: var(--shadow-1);
 }
 
@@ -70,10 +63,6 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-  }
-
-  .gallery {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 

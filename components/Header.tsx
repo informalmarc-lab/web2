@@ -15,10 +15,11 @@ export default function Header() {
             <Link href="/">Home</Link>
             <Link href="/about">About</Link>
             <Link href="/catalog">Catalog</Link>
+            <Link href="/anonymity">Anonymity</Link>
             <Link href="/apply">Apply</Link>
             <Link href="/faq">FAQ</Link>
           </nav>
-          <Button href="/apply">Apply Now ?</Button>
+          <Button href="/apply">Apply Now -></Button>
         </div>
       </div>
     </header>

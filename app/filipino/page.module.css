@@ -1,0 +1,134 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-10);
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.hero {
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-3);
+  padding: var(--space-8);
+  box-shadow: var(--shadow-1);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  animation: fadeUp 720ms ease both;
+}
+
+.eyebrow {
+  margin: 0;
+  font-size: var(--text-sm);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  font-weight: 700;
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: var(--text-4xl);
+}
+
+.lead {
+  margin: 0;
+  color: var(--color-muted);
+  font-size: var(--text-lg);
+  line-height: 1.7;
+}
+
+.section {
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-3);
+  padding: var(--space-7);
+  box-shadow: var(--shadow-1);
+  animation: fadeUp 720ms ease both;
+}
+
+.section h2 {
+  margin-top: 0;
+  margin-bottom: var(--space-3);
+  font-size: var(--text-2xl);
+}
+
+.section p {
+  margin: 0;
+  color: var(--color-muted);
+  line-height: 1.7;
+}
+
+.grid {
+  display: grid;
+  gap: var(--space-5);
+  animation: fadeUp 720ms ease both;
+  animation-delay: 120ms;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-3);
+  padding: var(--space-6);
+  box-shadow: var(--shadow-1);
+}
+
+.card h3 {
+  margin-top: 0;
+  margin-bottom: var(--space-2);
+  font-size: var(--text-xl);
+}
+
+.card p {
+  margin: 0;
+  color: var(--color-muted);
+  line-height: 1.7;
+}
+
+.cta {
+  background: linear-gradient(135deg, #fff0e8, #fffaf6);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-3);
+  padding: var(--space-8);
+  box-shadow: var(--shadow-1);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  animation: fadeUp 720ms ease both;
+  animation-delay: 200ms;
+}
+
+.cta h2 {
+  margin: 0;
+}
+
+.cta p {
+  margin: 0;
+  color: var(--color-muted);
+  line-height: 1.7;
+}
+
+@media (min-width: 900px) {
+  .grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .cta {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

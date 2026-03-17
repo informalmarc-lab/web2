@@ -69,22 +69,46 @@ export default function ApplyForm() {
         </label>
       </div>
       <div className={styles.field}>
-        <label htmlFor="stripchat">Are you currently on StripChat?</label>
+        <label htmlFor="stripchat">StripChat account status</label>
         <select id="stripchat" name="stripchat" required defaultValue="">
           <option value="" aria-hidden="true" />
-          <option value="Yes">Yes</option>
-          <option value="No">No</option>
-          <option value="I want to join">I want to join</option>
+          <option value="I already have an account">
+            I already have an account
+          </option>
+          <option value="Please create one for me for free">
+            Please create one for me for free
+          </option>
+          <option value="Not interested in StripChat">
+            Not interested in StripChat
+          </option>
         </select>
       </div>
       <div className={styles.field}>
-        <label htmlFor="chaturbate">Are you currently on Chaturbate?</label>
+        <label htmlFor="chaturbate">Chaturbate account status</label>
         <select id="chaturbate" name="chaturbate" required defaultValue="">
           <option value="" aria-hidden="true" />
-          <option value="Yes">Yes</option>
-          <option value="No">No</option>
-          <option value="I want to join">I want to join</option>
+          <option value="I already have an account">
+            I already have an account
+          </option>
+          <option value="Please create one for me for free">
+            Please create one for me for free
+          </option>
+          <option value="Not interested in Chaturbate">
+            Not interested in Chaturbate
+          </option>
         </select>
+      </div>
+      <div className={styles.field}>
+        <label htmlFor="preferredUsername">Preferred username (optional)</label>
+        <input
+          id="preferredUsername"
+          name="preferredUsername"
+          type="text"
+        />
+        <p className={styles.helper}>
+          If you'd like us to create your accounts with a specific name, enter
+          it here. You can always change it later.
+        </p>
       </div>
       <div className={styles.field}>
         <label htmlFor="about">

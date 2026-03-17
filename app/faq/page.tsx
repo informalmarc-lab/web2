@@ -24,6 +24,21 @@ const faqItems = [
       "Not at all. Many of the creators who join Omega have never streamed before. We walk you through setup, equipment, lighting, and what works on each platform -- from scratch if needed.",
   },
   {
+    question: "Can you create my StripChat or Chaturbate account for me?",
+    answer:
+      "Yes -- and it's completely free. If you've never signed up before, we'll handle the account creation for you. Your account is registered in your name and owned entirely by you from day one. We never hold your login or have ongoing access to your profile. We just remove the friction of getting started.",
+  },
+  {
+    question: "Will Omega have access to my account after setup?",
+    answer:
+      "No. Once your account is created and set up, it belongs to you entirely. We do not retain access, we do not manage your profile on your behalf, and we will never log in without your explicit request for technical support. You are always in full control.",
+  },
+  {
+    question: "What if I already have an account?",
+    answer:
+      "Perfect -- just select that option on the apply form and we'll pick up from there. No need to create anything new.",
+  },
+  {
     question: "What does the on-stream ad look like?",
     answer:
       "It's a small, non-intrusive overlay in the bottom-left corner of your stream. It doesn't interrupt your content or distract your viewers.",

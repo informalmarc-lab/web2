@@ -5,48 +5,76 @@ export default function AnonymityPage() {
   return (
     <div className={styles.page}>
       <section className={styles.hero}>
-        <div>
-          <p className={styles.eyebrow}>Privacy first</p>
-          <h1>How models stay anonymous</h1>
-          <p className={styles.lead}>
-            We build privacy into every step so you can grow without exposing
-            your real identity. You stay in control, always.
+        <h1>Your privacy is non-negotiable.</h1>
+        <p className={styles.subhead}>
+          Streaming doesn't have to mean giving up your identity. Here's how we
+          help you stay completely anonymous.
+        </p>
+      </section>
+
+      <section className={styles.grid}>
+        <div className={styles.card}>
+          <h2>Use any name you want.</h2>
+          <p>
+            Your streaming name is entirely your choice. It doesn't have to be
+            your real name, anything close to it, or anything that could
+            identify you. We help you pick a persona that feels right and
+            protects your privacy.
           </p>
         </div>
         <div className={styles.card}>
-          <h2>Our privacy playbook</h2>
-          <ul className={styles.list}>
-            <li>Use a stage name and a separate email for all accounts.</li>
-            <li>Keep social media and streaming accounts completely separate.</li>
-            <li>Use a dedicated phone number or app number for verification.</li>
-            <li>Control what your background shows with simple lighting tricks.</li>
-            <li>Set your payout method directly with the platform.</li>
-            <li>Block regions if you want extra privacy.</li>
-            <li>We never ask for your login, ever.</li>
-          </ul>
+          <h2>You control what people see.</h2>
+          <p>
+            Many creators choose to stream without showing their face, or use
+            lighting, angles, and accessories to limit identification. We'll
+            walk you through exactly how to set up your stream so you stay
+            comfortable with what's visible -- and what isn't.
+          </p>
+        </div>
+        <div className={styles.card}>
+          <h2>Your location stays private.</h2>
+          <p>
+            Neither your city, state, nor any personal location information is
+            ever displayed on your profile or stream. StripChat and Chaturbate
+            do not show your real location to viewers. We will never ask you to
+            reveal where you are.
+          </p>
+        </div>
+        <div className={styles.card}>
+          <h2>We verify your age. That's it.</h2>
+          <p>
+            Platforms require age verification to comply with the law -- this is
+            a one-time process between you and the platform, not Omega. Beyond
+            that, your real name and identity are never shared, displayed, or
+            disclosed to anyone. Not to viewers, not to us.
+          </p>
+        </div>
+        <div className={styles.card}>
+          <h2>Keep your streaming life separate.</h2>
+          <p>
+            We strongly recommend keeping your streaming persona completely
+            separate from any personal social media accounts. Don't use the
+            same username, profile picture, or email. We'll help you set up a
+            dedicated email address for your streaming accounts if needed.
+          </p>
         </div>
       </section>
 
-      <section className={styles.story}>
-        <div className={styles.storyCard}>
-          <p className={styles.storyLabel}>Real story</p>
-          <h2>"Maya" paid off college in 10 weeks</h2>
-          <p>
-            Maya is a 21-year-old college student in the Midwest. She started on
-            January 1, 2026 with a stage name, a new email, and a simple setup in
-            her dorm. We helped her build a safe routine and keep her identity
-            private from day one.
-          </p>
-          <p>
-            By March 12, 2026 she had earned over $45,000, paid off her spring
-            semester, and covered her remaining balance for the year. She still
-            streams under her stage name and has kept her real identity private.
-          </p>
-          <p>
-            Her biggest takeaway: privacy is not a myth. It is a system. When you
-            follow the steps, you stay anonymous and you stay in control.
-          </p>
-          <Button href="/apply" variant="secondary">Apply with privacy in mind</Button>
+      <section className={styles.trustBlock}>
+        <h3>Privacy promises</h3>
+        <ul>
+          <li>Your real name is never displayed anywhere</li>
+          <li>Your location is never shared or shown</li>
+          <li>You control exactly what appears on camera</li>
+          <li>Age verification is between you and the platform only</li>
+          <li>We never share your personal information with anyone</li>
+        </ul>
+      </section>
+
+      <section className={styles.cta}>
+        <div>
+          <h2>Ready to get started safely?</h2>
+          <Button href="/apply">Apply Now -></Button>
         </div>
       </section>
     </div>

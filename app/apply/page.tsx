@@ -29,9 +29,13 @@ export default function ApplyPage() {
           <p>Not sure if this is right for you? Read our FAQ before applying.</p>
           <p>We welcome applications in any language, with support in English and Spanish.</p>
           <div className={styles.trustList}>
-            <p>We will never share your information.</p>
-            <p>Applying does not commit you to anything.</p>
-            <p>You can withdraw your application at any time.</p>
+            <p>✓ We will never share your information.</p>
+            <p>✓ Applying does not commit you to anything.</p>
+            <p>✓ You can withdraw your application at any time.</p>
+            <p>
+              ✓ Any accounts we create are registered in your name and owned
+              entirely by you.
+            </p>
           </div>
         </div>
       </section>

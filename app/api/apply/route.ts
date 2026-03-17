@@ -13,8 +13,9 @@ export async function POST(request: Request) {
       `Email address: ${payload.email ?? "N/A"}`,
       `Country: ${payload.country ?? "N/A"}`,
       `Age confirmed: ${payload.ageConfirm ? "Yes" : "No"}`,
-      `On StripChat: ${payload.stripchat ?? "N/A"}`,
-      `On Chaturbate: ${payload.chaturbate ?? "N/A"}`,
+      `StripChat account status: ${payload.stripchat ?? "N/A"}`,
+      `Chaturbate account status: ${payload.chaturbate ?? "N/A"}`,
+      `Preferred username: ${payload.preferredUsername ?? "N/A"}`,
       `About: ${payload.about ?? "N/A"}`,
     ].join("\n");
 

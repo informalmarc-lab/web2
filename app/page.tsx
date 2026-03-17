@@ -1,5 +1,6 @@
 import Button from "@/components/Button";
 import Card from "@/components/Card";
+import CountUp from "@/components/CountUp";
 import styles from "./page.module.css";
 
 export default function HomePage() {
@@ -16,9 +17,8 @@ export default function HomePage() {
             straight to you every time.
           </p>
           <p className={styles.heroSupport}>
-            No experience needed. No contracts that trap you. Just real support
-            from people who get it -- so you can look at this and feel,
-            "I can do this."
+            No experience needed. No account needed. No contracts that trap you.
+            Just real support from people who actually get it.
           </p>
           <div className={styles.heroActions}>
             <Button href="/apply">Apply Now -></Button>
@@ -87,6 +87,43 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Free account creation */}
+      <section className={`${styles.section} ${styles.accountSetup}`}>
+        <div className={styles.accountIntro}>
+          <h2>Don't have an account yet? We'll set it up for you. Free.</h2>
+          <p>
+            Never signed up to StripChat or Chaturbate before? No problem. Omega
+            will create your accounts for you at no cost -- registered in your
+            name, owned by you from day one. We handle the setup so you can skip
+            the confusing parts and get straight to earning.
+          </p>
+          <p className={styles.accountNote}>
+            You own your accounts. We just build them for you.
+          </p>
+        </div>
+        <div className={styles.accountGrid}>
+          <div>
+            <h4>Free account creation</h4>
+            <p>StripChat and/or Chaturbate, built for you.</p>
+          </div>
+          <div>
+            <h4>Registered in your name</h4>
+            <p>Full ownership from day one.</p>
+          </div>
+          <div>
+            <h4>Private by default</h4>
+            <p>We never hold your login or manage your profile.</p>
+          </div>
+          <div>
+            <h4>Ready in 2 hours</h4>
+            <p>Go live quickly once you're approved.</p>
+          </div>
+        </div>
+        <Button href="/apply" variant="secondary">
+          Apply and we'll handle the rest ->
+        </Button>
+      </section>
+
       {/* Community */}
       <section className={styles.section}>
         <div>
@@ -131,6 +168,10 @@ export default function HomePage() {
           </p>
         </div>
         <div className={styles.cardGrid}>
+          <Card title="Free Account Setup">
+            No StripChat or Chaturbate account yet? We create it for you at no
+            cost -- registered in your name, owned by you, ready to earn.
+          </Card>
           <Card title="On-Stream Ad Placement">
             A small, non-intrusive overlay sits in the bottom-left corner of
             your stream. You keep streaming. We handle the rest.
@@ -159,15 +200,21 @@ export default function HomePage() {
         <h2 className={styles.sectionTitle}>The numbers</h2>
         <div className={styles.stats}>
           <div className={styles.statBlock}>
-            <h3>$4,000,000+</h3>
+            <h3>
+              <CountUp end={4000000} prefix="$" suffix="+" />
+            </h3>
             <p>earned collectively by Omega creators since 2022.</p>
           </div>
           <div className={styles.statBlock}>
-            <h3>$250,000+</h3>
+            <h3>
+              <CountUp end={250000} prefix="$" suffix="+" />
+            </h3>
             <p>already earned in 2026 alone.</p>
           </div>
           <div className={styles.statBlock}>
-            <h3>$0</h3>
+            <h3 className={styles.zeroStat}>
+              $0 <span className={styles.checkmark} aria-hidden="true" />
+            </h3>
             <p>taken from a single creator's income. Ever.</p>
           </div>
         </div>

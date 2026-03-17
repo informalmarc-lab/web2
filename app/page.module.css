@@ -37,6 +37,19 @@
   filter: blur(1px);
 }
 
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, rgba(255, 249, 244, 0.9), rgba(255, 249, 244, 0.75)),
+    url("https://images.unsplash.com/photo-1544723795-3fb6469f5b39?auto=format&fit=crop&w=1600&q=80");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.35;
+  pointer-events: none;
+}
+
 .heroContent {
   display: flex;
   flex-direction: column;
@@ -199,6 +212,48 @@
   gap: var(--space-5);
 }
 
+.accountSetup {
+  background: linear-gradient(135deg, rgba(255, 242, 236, 0.95), rgba(255, 255, 255, 0.9));
+  border: 1px solid rgba(28, 21, 36, 0.12);
+  border-radius: var(--radius-3);
+  padding: var(--space-8);
+  box-shadow: var(--shadow-1);
+}
+
+.accountIntro h2 {
+  margin-top: 0;
+  margin-bottom: var(--space-3);
+  font-size: var(--text-3xl);
+}
+
+.accountIntro p {
+  margin: 0 0 var(--space-3);
+  color: var(--color-muted);
+  line-height: 1.7;
+}
+
+.accountNote {
+  font-weight: 600;
+  color: var(--color-ink-strong);
+}
+
+.accountGrid {
+  display: grid;
+  gap: var(--space-4);
+  margin-top: var(--space-5);
+  margin-bottom: var(--space-5);
+}
+
+.accountGrid h4 {
+  margin: 0 0 var(--space-2);
+  font-size: var(--text-lg);
+}
+
+.accountGrid p {
+  margin: 0;
+  color: var(--color-muted);
+}
+
 .callout {
   background: linear-gradient(135deg, #fff2ec, #ffffff);
   border: 1px solid var(--color-border);
@@ -259,6 +314,22 @@
   color: var(--color-accent);
 }
 
+.zeroStat {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.checkmark {
+  width: 18px;
+  height: 10px;
+  border-left: 3px solid var(--color-accent);
+  border-bottom: 3px solid var(--color-accent);
+  transform: rotate(-45deg) scale(0);
+  transform-origin: center;
+  animation: checkmarkPop 600ms ease forwards;
+}
+
 .statBlock p {
   margin: 0;
   color: var(--color-muted);
@@ -279,6 +350,17 @@
   color: var(--color-muted);
   line-height: 1.7;
   box-shadow: var(--shadow-1);
+  position: relative;
+}
+
+.testimonials blockquote::before {
+  content: "“";
+  position: absolute;
+  top: 8px;
+  right: 16px;
+  font-size: 44px;
+  color: rgba(226, 92, 103, 0.2);
+  font-family: var(--font-display, "Playfair Display", serif);
 }
 
 .ctaStrip {
@@ -309,6 +391,21 @@
   }
 }
 
+@keyframes checkmarkPop {
+  0% {
+    transform: rotate(-45deg) scale(0);
+    opacity: 0;
+  }
+  60% {
+    transform: rotate(-45deg) scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(-45deg) scale(1);
+    opacity: 1;
+  }
+}
+
 @media (min-width: 768px) {
   .hero {
     grid-template-columns: 1.05fr 0.95fr;
@@ -319,6 +416,10 @@
   }
 
   .cardGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .accountGrid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
@@ -341,6 +442,21 @@
   }
 }
 
+@media (max-width: 768px) {
+  .testimonials {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: var(--space-4);
+    padding-bottom: var(--space-3);
+  }
+
+  .testimonials blockquote {
+    min-width: 80%;
+    scroll-snap-align: start;
+  }
+}
+
 @media (max-width: 640px) {
   .heroMiniGrid {
     grid-template-columns: 1fr;
@@ -350,5 +466,9 @@
 @media (min-width: 1024px) {
   .cardGrid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .accountGrid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 }

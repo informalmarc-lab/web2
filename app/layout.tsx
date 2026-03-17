@@ -3,6 +3,7 @@ import type { ReactNode } from "react";
 import { Manrope, Playfair_Display } from "next/font/google";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import TrustBar from "@/components/TrustBar";
 import "./globals.css";
 import styles from "./layout.module.css";
 
@@ -33,6 +34,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${manrope.variable} ${playfair.variable}`}>
         <Header />
+        <TrustBar />
         <main className={styles.main}>{children}</main>
         <Footer />
       </body>

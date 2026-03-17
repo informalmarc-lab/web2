@@ -21,7 +21,7 @@ const playfair = Playfair_Display({
 export const metadata: Metadata = {
   title: "Omega Agency",
   description:
-    "Free promotion. Full setup. Your money goes straight to you — every time, no exceptions.",
+    "Free promotion. Full setup. Your money goes straight to you â€” every time, no exceptions.",
 };
 
 export default function RootLayout({
